@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.1 on win32)" generated="2025-10-23T23:43:32.186212" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Tuba\Desktop\swt_assignment2\tests">
+<suite id="s1-s1" name="Log In" source="C:\Users\Tuba\Desktop\swt_assignment2\tests\log_in.robot">
+<test id="s1-s1-t1" name="Log In Successfully" line="6">
+<kw name="Open Pinterest" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:43:32.488213" level="INFO">Opening browser 'chrome' to base url 'https://www.pinterest.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-23T23:43:32.487073" elapsed="19.241437"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-23T23:43:51.730510" elapsed="0.045008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T23:43:54.777119" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T23:43:51.775518" elapsed="3.001601"/>
+</kw>
+<status status="PASS" start="2025-10-23T23:43:32.483061" elapsed="22.296056"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:43:54.783112" level="INFO">Clicking element 'xpath=//*[@data-test-id="simple-login-button"]'.</msg>
+<arg>xpath=//*[@data-test-id="simple-login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T23:43:54.781109" elapsed="0.187660"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T23:43:56.971431" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T23:43:54.969782" elapsed="2.001649"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:43:56.974931" level="INFO">Typing text 'tuba@gmail.com' into text field 'id=email'.</msg>
+<msg time="2025-10-23T23:43:57.482012" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-23T23:43:57.483033" level="FAIL">Element with locator 'id=email' not found.</msg>
+<arg>id=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-10-23T23:43:56.973429" elapsed="0.515663">Element with locator 'id=email' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-23T23:43:57.490480" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-23T23:43:57.491484" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-23T23:43:57.491484" elapsed="0.000998"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@aria-label="Profile"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-10-23T23:43:57.492482" elapsed="0.000000"/>
+</kw>
+<kw name="Close Pinterest" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-23T23:43:57.495470" elapsed="2.365932"/>
+</kw>
+<status status="PASS" start="2025-10-23T23:43:57.493478" elapsed="2.368943"/>
+</kw>
+<status status="FAIL" start="2025-10-23T23:43:32.482476" elapsed="27.380967">Element with locator 'id=email' not found.</status>
+</test>
+<status status="FAIL" start="2025-10-23T23:43:32.215609" elapsed="27.649113"/>
+</suite>
+<suite id="s1-s2" name="Log Out" source="C:\Users\Tuba\Desktop\swt_assignment2\tests\log_out.robot">
+<test id="s1-s2-t1" name="Log Out Successfully" line="6">
+<kw name="Open Pinterest" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:43:59.880012" level="INFO">Opening browser 'chrome' to base url 'https://www.pinterest.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-23T23:43:59.878934" elapsed="4.749632"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-23T23:44:04.628566" elapsed="0.090542"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T23:44:07.720620" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T23:44:04.719108" elapsed="3.001512"/>
+</kw>
+<status status="PASS" start="2025-10-23T23:43:59.877914" elapsed="7.842706"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:44:07.721628" level="INFO">Clicking element 'xpath=//*[@data-test-id="simple-login-button"]'.</msg>
+<arg>xpath=//*[@data-test-id="simple-login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T23:44:07.721628" elapsed="0.196487"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T23:44:09.918721" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T23:44:07.918115" elapsed="2.000606"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:44:09.921229" level="INFO">Typing text 'tuba@gmail.com' into text field 'id=email'.</msg>
+<msg time="2025-10-23T23:44:10.438506" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-23T23:44:10.438506" level="FAIL">Element with locator 'id=email' not found.</msg>
+<arg>id=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-10-23T23:44:09.919228" elapsed="0.521463">Element with locator 'id=email' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:10.441797" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:10.443030" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:10.444350" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@aria-label="Profile"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:10.444350" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:10.445747" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[text()="Log out" or text()="Выйти"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:10.446867" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:10.447877" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@data-test-id="simple-login-button"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:10.448929" elapsed="0.000000"/>
+</kw>
+<kw name="Close Pinterest" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-23T23:44:10.450979" elapsed="2.335814"/>
+</kw>
+<status status="PASS" start="2025-10-23T23:44:10.449947" elapsed="2.337700"/>
+</kw>
+<status status="FAIL" start="2025-10-23T23:43:59.876789" elapsed="12.911854">Element with locator 'id=email' not found.</status>
+</test>
+<status status="FAIL" start="2025-10-23T23:43:59.867039" elapsed="12.923715"/>
+</suite>
+<suite id="s1-s3" name="Search Pin" source="C:\Users\Tuba\Desktop\swt_assignment2\tests\search_pin.robot">
+<test id="s1-s3-t1" name="Search For A Pin" line="6">
+<kw name="Open Pinterest" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:44:12.809030" level="INFO">Opening browser 'chrome' to base url 'https://www.pinterest.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-23T23:44:12.809030" elapsed="4.952675"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-23T23:44:17.761705" elapsed="0.047584"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T23:44:20.811974" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T23:44:17.810290" elapsed="3.001684"/>
+</kw>
+<status status="PASS" start="2025-10-23T23:44:12.808032" elapsed="8.004528"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:44:20.813583" level="INFO">Clicking element 'xpath=//*[@data-test-id="simple-login-button"]'.</msg>
+<arg>xpath=//*[@data-test-id="simple-login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T23:44:20.812560" elapsed="0.644946"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T23:44:23.460179" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T23:44:21.458509" elapsed="2.001670"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:44:23.461185" level="INFO">Typing text 'tuba@gmail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T23:44:23.461185" elapsed="0.470944"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:44:23.933629" level="INFO">Typing text 'password1111' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T23:44:23.932129" elapsed="0.281718"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:44:24.215861" level="INFO">Clicking button 'xpath=//*[@type="submit"]'.</msg>
+<msg time="2025-10-23T23:44:25.171489" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-23T23:44:25.171489" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2AD80D5+2992373]
+	(No symbol) [0x00007FF7D276BFD0]
+	(No symbol) [0x00007FF7D260590A]
+	(No symbol) [0x00007FF7D260C46F]
+	(No symbol) [0x00007FF7D260F11C]
+	(No symbol) [0x00007FF7D260F1EF]
+	(No symbol) [0x00007FF7D265B3FB]
+	(No symbol) [0x00007FF7D265A3E9]
+	(No symbol) [0x00007FF7D264CF3B]
+	(No symbol) [0x00007FF7D267F36A]
+	(No symbol) [0x00007FF7D264C596]
+	(No symbol) [0x00007FF7D267F580]
+	(No symbol) [0x00007FF7D269F584]
+	(No symbol) [0x00007FF7D267F113]
+	(No symbol) [0x00007FF7D264A918]
+	(No symbol) [0x00007FF7D264BA81]
+	GetHandleVerifier [0x00007FF7D2B36A2D+3379789]
+	GetHandleVerifier [0x00007FF7D2B4C32D+3468109]
+	GetHandleVerifier [0x00007FF7D2B40043+3418211]
+	GetHandleVerifier [0x00007FF7D28CC78B+847787]
+	(No symbol) [0x00007FF7D277757F]
+	(No symbol) [0x00007FF7D2772FC4]
+	(No symbol) [0x00007FF7D277315D]
+	(No symbol) [0x00007FF7D2762979]
+	BaseThreadInitThunk [0x00007FFBC0D0E8D7+23]
+	RtlUserThreadStart [0x00007FFBC2A0C53C+44]
+</msg>
+<arg>xpath=//*[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-10-23T23:44:24.213847" elapsed="0.963622">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2AD80D5+2992373]
+	(No symbol) [0x00007FF7D276BFD0]
+	(No symbol) [0x00007FF7D260590A]
+	(No symbol) [0x00007FF7D260C46F]
+	(No symbol) [0x00007FF7D260F11C]
+	(No symbol) [0x00007FF7D260F1EF]
+	(No symbol) [0x00007FF7D265B3FB]
+	(No symbol) [0x00007FF7D265A3E9]
+	(No symbol) [0x00007FF7D264CF3B]
+	(No symbol) [0x00007FF7D267F36A]
+	(No symbol) [0x00007FF7D264C596]
+	(No symbol) [0x00007FF7D267F580]
+	(No symbol) [0x00007FF7D269F584]
+	(No symbol) [0x00007FF7D267F113]
+	(No symbol) [0x00007FF7D264A918]
+	(No symbol) [0x00007FF7D264BA81]
+	GetHandleVerifier [0x00007FF7D2B36A2D+3379789]
+	GetHandleVerifier [0x00007FF7D2B4C32D+3468109]
+	GetHandleVerifier [0x00007FF7D2B40043+3418211]
+	GetHandleVerifier [0x00007FF7D28CC78B+847787]
+	(No symbol) [0x00007FF7D277757F]
+	(No symbol) [0x00007FF7D2772FC4]
+	(No symbol) [0x00007FF7D277315D]
+	(No symbol) [0x00007FF7D2762979]
+	BaseThreadInitThunk [0x00007FFBC0D0E8D7+23]
+	RtlUserThreadStart [0x00007FFBC2A0C53C+44]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:25.177469" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//*[@aria-label="Search"]</arg>
+<arg>interior design</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:25.178781" elapsed="0.001436"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>xpath=//*[@aria-label="Search"]</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:25.181226" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:25.182223" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>interior</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-23T23:44:25.183387" elapsed="0.000000"/>
+</kw>
+<kw name="Close Pinterest" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-23T23:44:25.187504" elapsed="2.456600"/>
+</kw>
+<status status="PASS" start="2025-10-23T23:44:25.185511" elapsed="2.459789"/>
+</kw>
+<status status="FAIL" start="2025-10-23T23:44:12.806039" elapsed="14.839261">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D2AD80D5+2992373]
+	(No symbol) [0x00007FF7D276BFD0]
+	(No symbol) [0x00007FF7D260590A]
+	(No symbol) [0x00007FF7D260C46F]
+	(No symbol) [0x00007FF7D260F11C]
+	(No symbol) [0x00007FF7D260F1EF]
+	(No symbol) [0x00007FF7D265B3FB]
+	(No symbol) [0x00007FF7D265A3E9]
+	(No symbol) [0x00007FF7D264CF3B]
+	(No symbol) [0x00007FF7D267F36A]
+	(No symbol) [0x00007FF7D264C596]
+	(No symbol) [0x00007FF7D267F580]
+	(No symbol) [0x00007FF7D269F584]
+	(No symbol) [0x00007FF7D267F113]
+	(No symbol) [0x00007FF7D264A918]
+	(No symbol) [0x00007FF7D264BA81]
+	GetHandleVerifier [0x00007FF7D2B36A2D+3379789]
+	GetHandleVerifier [0x00007FF7D2B4C32D+3468109]
+	GetHandleVerifier [0x00007FF7D2B40043+3418211]
+	GetHandleVerifier [0x00007FF7D28CC78B+847787]
+	(No symbol) [0x00007FF7D277757F]
+	(No symbol) [0x00007FF7D2772FC4]
+	(No symbol) [0x00007FF7D277315D]
+	(No symbol) [0x00007FF7D2762979]
+	BaseThreadInitThunk [0x00007FFBC0D0E8D7+23]
+	RtlUserThreadStart [0x00007FFBC2A0C53C+44]
+</status>
+</test>
+<status status="FAIL" start="2025-10-23T23:44:12.793322" elapsed="14.853989"/>
+</suite>
+<suite id="s1-s4" name="Sign Up" source="C:\Users\Tuba\Desktop\swt_assignment2\tests\sign_up.robot">
+<test id="s1-s4-t1" name="Verify Sign Up Page Opens" line="6">
+<kw name="Open Pinterest" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:44:27.692337" level="INFO">Opening browser 'chrome' to base url 'https://www.pinterest.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-23T23:44:27.660996" elapsed="5.206134"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-23T23:44:32.867130" elapsed="0.110401"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T23:44:35.978298" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T23:44:32.977531" elapsed="3.000767"/>
+</kw>
+<status status="PASS" start="2025-10-23T23:44:27.659993" elapsed="8.318305"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:44:35.979536" level="INFO">Clicking element 'xpath=//*[@data-test-id="simple-signup-button"]'.</msg>
+<arg>xpath=//*[@data-test-id="simple-signup-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T23:44:35.979536" elapsed="0.504501"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T23:44:38.484382" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T23:44:36.484037" elapsed="2.000345"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T23:44:38.889035" level="INFO">Current page contains element 'xpath=//*[@id="email"]'.</msg>
+<arg>xpath=//*[@id="email"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-10-23T23:44:38.484985" elapsed="0.404050"/>
+</kw>
+<kw name="Close Pinterest" owner="keywords" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-23T23:44:38.890296" elapsed="2.342927"/>
+</kw>
+<status status="PASS" start="2025-10-23T23:44:38.890296" elapsed="2.342927"/>
+</kw>
+<status status="PASS" start="2025-10-23T23:44:27.657791" elapsed="13.576491"/>
+</test>
+<status status="PASS" start="2025-10-23T23:44:27.649782" elapsed="13.585519"/>
+</suite>
+<status status="FAIL" start="2025-10-23T23:43:32.188280" elapsed="69.049111"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="3" skip="0">Tests</stat>
+<stat name="Log In" id="s1-s1" pass="0" fail="1" skip="0">Tests.Log In</stat>
+<stat name="Log Out" id="s1-s2" pass="0" fail="1" skip="0">Tests.Log Out</stat>
+<stat name="Search Pin" id="s1-s3" pass="0" fail="1" skip="0">Tests.Search Pin</stat>
+<stat name="Sign Up" id="s1-s4" pass="1" fail="0" skip="0">Tests.Sign Up</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
