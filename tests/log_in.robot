@@ -1,11 +1,12 @@
 *** Settings ***
-Resource    ../resources/keywords.robot
 Resource    ../resources/variables.robot
+Resource    ../resources/keywords.robot
 
 *** Test Cases ***
 Log In Successfully
     Open Pinterest
     Click Element    xpath=//*[@data-test-id="simple-login-button"]
+    Sleep    2s
     Input Text    id=email    ${EMAIL}
     Input Text    id=password    ${PASSWORD}
     Click Button    xpath=//*[@type="submit"]
